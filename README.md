@@ -163,7 +163,7 @@ Be sure to install `bmap-tools`:
 Create a bmap file:
 
     $ bmaptool create /var/tmp/wic/build/sdimage-gumstix-201506231742-mmcblk.direct > image.bmap
-You need to change sdimage-gumstix-201506231742-mmcblk.direct to the name that showed up in the last step under "Info: The new image(s) can be found here.
+You need to change sdimage-gumstix-201506231742-mmcblk.direct to the name that showed up in the last step under `Info: The new image(s) can be found here.`
 
 Flash uSD:
 
