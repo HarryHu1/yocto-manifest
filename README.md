@@ -22,6 +22,8 @@ setup a Yocto Project build environment for you!
 
 Getting Started
 ---------------
+Create a new folder for the yocto project under home dirctory, and change to the new folder.
+
 **1.  Install Repo.**
 
 Download the Repo script:
@@ -104,7 +106,7 @@ your connection.
     $ export TEMPLATECONF=meta-gumstix-extras/conf 
     $ source ./poky/oe-init-build-env
 
-This copies default configuration information into the **poky/build/conf**
+This copies default configuration information into the **yocto/build/conf**
 directory and sets up some environment variables for the build system.  This configuration
 directory is not under revision control; you may wish to edit these configuration
 files for your specific setup. In particular, change the `MACHINE` variable in **conf/local.conf** if you are
@@ -161,6 +163,7 @@ Be sure to install `bmap-tools`:
 Create a bmap file:
 
     $ bmaptool create /var/tmp/wic/build/sdimage-gumstix-201506231742-mmcblk.direct > image.bmap
+You need to change sdimage-gumstix-201506231742-mmcblk.direct to the name that showed up in the last step under "Info: The new image(s) can be found here.
 
 Flash uSD:
 
